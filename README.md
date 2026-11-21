@@ -1,5 +1,11 @@
 # Rekryt: wall detection for house floor plans
 
+![F1 own drawings](https://img.shields.io/badge/F1%20own%20drawings-0.971-2a78d6)
+![F1 CVC-FP](https://img.shields.io/badge/F1%20CVC--FP-0.881-2a78d6)
+![ONNX](https://img.shields.io/badge/ONNX-Runtime-005CED?logo=onnx&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![Task](https://img.shields.io/badge/task-wall%20segmentation-555555)
+
 Rekryt is the wall detector in VDB, a Swedish house-design CAD application. You upload a floor-plan image, Rekryt finds
 the walls, and VDB turns them into an editable drawing. The AI architect can then change that drawing on request.
 
