@@ -2,8 +2,6 @@
 
 ![F1 own drawings](https://img.shields.io/badge/F1%20own%20drawings-0.971-2a78d6)
 ![F1 CVC-FP](https://img.shields.io/badge/F1%20CVC--FP-0.881-2a78d6)
-![ONNX](https://img.shields.io/badge/ONNX-Runtime-005CED?logo=onnx&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
 ![Task](https://img.shields.io/badge/task-wall%20segmentation-555555)
 
 Rekryt is the wall detector in VDB, a Swedish house-design CAD application. You upload a floor-plan image, Rekryt finds
@@ -58,7 +56,6 @@ CVC-FP plans.
 
 - **Recall** is the share of ground-truth wall pixels that Rekryt finds. **Precision** is the share of Rekryt's wall pixels
   that lie on a real wall. A pixel counts as a hit within a tolerance of max(2 px, 0.4 % of the image's longest side).
-- Rekryt v5: ONNX, 512 × 512 input, threshold 0.45.
 - The numbers on VDB's own drawings are much higher than on real drawings, because the clean CAD style is easier.
   Compare like with like: **0.97 recall is not a general accuracy.**
 - Houses kept for final evaluation are not shown here.
