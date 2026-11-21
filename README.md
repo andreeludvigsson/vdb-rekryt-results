@@ -9,7 +9,6 @@ the walls, and VDB turns them into an editable drawing. The AI architect can the
 
 **Training data:** Rekryt is trained from scratch on openly licensed data
 ([Swiss Dwellings](https://zenodo.org/records/7788422) by Archilyse AG, CC BY 4.0) and VDB's own synthetic drawings.
-**It is not trained on CubiCasa5K.**
 
 This repository holds results only. The model, the training data and the application code are not published.
 
