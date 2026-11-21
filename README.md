@@ -9,6 +9,10 @@
 Rekryt is the wall detector in VDB, a Swedish house-design CAD application. You upload a floor-plan image, Rekryt finds
 the walls, and VDB turns them into an editable drawing. The AI architect can then change that drawing on request.
 
+**Training data:** Rekryt is trained from scratch on openly licensed data
+([Swiss Dwellings](https://zenodo.org/records/7788422) by Archilyse AG, CC BY 4.0) and VDB's own synthetic drawings.
+**It is not trained on CubiCasa5K.**
+
 This repository holds results only. The model, the training data and the application code are not published.
 
 Each image has three panels: **original | ground truth (walls, green) | Rekryt v5 (blue)**.
