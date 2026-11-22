@@ -26,54 +26,29 @@ this dataset before it was measured.
 **Rekryt is better on 102 of the 122 plans.** The difference in mean F1 is **+0.026** (95 % confidence interval
 +0.018 to +0.034, paired bootstrap over the 122 plans).
 
-CVC-FP's images cannot be shown here for licence reasons, so only the numbers are given.
+### Where Rekryt wins most
 
-## Real drawings: HABS, public domain
+The six plans with Rekryt's largest lead over CubiCasa5K. Panels: **original | ground truth | CubiCasa5K | Rekryt v5**.
+Green is the dataset's own ground truth, red is CubiCasa5K, blue is Rekryt.
 
-Measured floor plans of real houses from the **Historic American Buildings Survey** (U.S. National Park Service), all in
-the public domain. Older drawings with hatching, dimension chains and handwriting. These sheets have no ground truth,
-so they are shown side by side without scores. Sources: [HABS.md](HABS.md).
+![CVC-FP image003](images/cvc_image003.png)
 
-Panels: **original | CubiCasa5K | Rekryt v5**, walls in the same colour.
+![CVC-FP image014](images/cvc_image014.png)
 
-**Thick hatched masonry on stone-patterned ground**
+![CVC-FP image008](images/cvc_image008.png)
 
-![HABS sheet 07](images/habs_07_cmp.png)
+![CVC-FP IIa_SR1102](images/cvc_IIa_SR1102.png)
 
-**A plan with an octagonal room**
+![CVC-FP 7](images/cvc_7.png)
 
-![HABS sheet 13](images/habs_13_cmp.png)
+![CVC-FP IIa_GC1202](images/cvc_IIa_GC1202.png)
 
-**Heavy stippled masonry, dimension lines and running text**
-
-![HABS sheet 10](images/habs_10_cmp.png)
-
-**Dense hatching and patterned fills**
-
-![HABS sheet 04](images/habs_04_cmp.png)
-
-<details>
-<summary><b>Six more HABS sheets</b></summary>
-
-![HABS sheet 08](images/habs_08_cmp.png)
-
-![HABS sheet 09](images/habs_09_cmp.png)
-
-![HABS sheet 14](images/habs_14_cmp.png)
-
-![HABS sheet 15](images/habs_15_cmp.png)
-
-![HABS sheet 16](images/habs_16_cmp.png)
-
-![HABS sheet 19](images/habs_19_cmp.png)
-
-</details>
+Images and ground truth: CVC-FP (de las Heras et al., IJDAR 2015), CC BY-NC 4.0.
 
 ## VDB's own drawings
 
-57 plans exported from VDB itself: 17 start houses and 40 generated houses. The ground truth (facit) comes straight from
-the drawing's own geometry. The whole sheet goes in as an uploaded drawing would, frame and title block included.
-Panels: **original | ground truth | CubiCasa5K | Rekryt v5**.
+57 plans exported from VDB itself: 17 start houses and 40 generated houses. The ground truth comes straight from the
+drawing's own geometry. The whole sheet goes in as an uploaded drawing would, frame and title block included.
 
 | Model | Precision | Recall | F1 mean | F1 median | F1 min–max |
 |---|---:|---:|---:|---:|---:|
@@ -81,16 +56,6 @@ Panels: **original | ground truth | CubiCasa5K | Rekryt v5**.
 | CubiCasa5K | 0.942 | 0.996 | 0.968 | 0.970 | 0.915–0.986 |
 
 Rekryt is better on 37 of the 57 drawings (+0.004 mean F1, 95 % CI +0.001 to +0.007).
-
-![Best case](images/cmp_bast.png)
-
-![Typical case](images/cmp_typisk1.png)
-
-![Typical case](images/cmp_typisk2.png)
-
-![Weakest case for Rekryt](images/cmp_samst.png)
-
-![CubiCasa5K's best case](images/cmp_konkurrentens_bast.png)
 
 ## How it is measured
 
@@ -103,10 +68,8 @@ Rekryt is better on 37 of the 57 drawings (+0.004 mean F1, 95 % CI +0.001 to +0.
 
 ## Sources and licences
 
-- HABS sheets: Historic American Buildings Survey, U.S. National Park Service, public domain. Each sheet's source is
-  linked in [HABS.md](HABS.md).
 - CVC-FP: de las Heras, Terrades, Robles, Sánchez, "CVC-FP and SGT: a new database for structural floor plan analysis
-  and its groundtruthing tool", IJDAR 2015.
+  and its groundtruthing tool", IJDAR 2015. CC BY-NC 4.0; its plans and ground truth are shown above for comparison.
 - CubiCasa5K: Kalervo, Ylioinas, Häikiö, Karhu, Kannala, "CubiCasa5K: A Dataset and an Improved Multi-Task Model for
   Floorplan Image Analysis", SCIA 2019. Model and weights CC BY-NC 4.0, used here only for comparison; neither is part of VDB.
 - Swiss Dwellings: Archilyse AG, CC BY 4.0.
